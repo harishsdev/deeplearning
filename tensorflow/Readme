@@ -2,3 +2,7 @@
 1.Basic image Classification:- loads the dataset from the internal and predicts data
 
 2.LENET-5
+
+3.alexnet_1
+
+4.alexnet_breakdown
