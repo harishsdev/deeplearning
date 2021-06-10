@@ -33,3 +33,15 @@ git push -u origin main
 fetch all the patches
 
  git format-patch --root HEAD
+ -----------------------------------------------------------------------------------
+ Git revert
+ 
+1.git reset --soft HEAD@{1} # delete the last commit keeping the changes
+
+2.git reset --hard HEAD@{1} # delete the last commit removing the changes
+
+3.git push --force origin master # delete the last commit also on remote branch
+
+4.git revert <commitHashOfTheRevert> # locate the hash the revert was done 
+                             #this will invert the changes made in that commit
+                             #and preserve the git history
